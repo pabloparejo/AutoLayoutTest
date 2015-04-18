@@ -14,6 +14,7 @@
 		21633D9A1AE259B8001A4C6D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21633D981AE259B8001A4C6D /* LaunchScreen.xib */; };
 		21633DA61AE259B8001A4C6D /* AutolayoutTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21633DA51AE259B8001A4C6D /* AutolayoutTestTests.m */; };
 		21633DB01AE259F8001A4C6D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21633DAF1AE259F8001A4C6D /* ViewController.xib */; };
+		21633DB21AE27BFF001A4C6D /* oops.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21633DB11AE27BFF001A4C6D /* oops.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		21633DA41AE259B8001A4C6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21633DA51AE259B8001A4C6D /* AutolayoutTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutolayoutTestTests.m; sourceTree = "<group>"; };
 		21633DAF1AE259F8001A4C6D /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		21633DB11AE27BFF001A4C6D /* oops.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = oops.jpg; path = ../../../Desktop/oops.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				21633D901AE259B8001A4C6D /* ViewController.h */,
 				21633D911AE259B8001A4C6D /* ViewController.m */,
 				21633DAF1AE259F8001A4C6D /* ViewController.xib */,
+				21633DB11AE27BFF001A4C6D /* oops.jpg */,
 				21633D961AE259B8001A4C6D /* Images.xcassets */,
 				21633D981AE259B8001A4C6D /* LaunchScreen.xib */,
 				21633D891AE259B8001A4C6D /* Supporting Files */,
@@ -199,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21633DB21AE27BFF001A4C6D /* oops.jpg in Resources */,
 				21633D9A1AE259B8001A4C6D /* LaunchScreen.xib in Resources */,
 				21633DB01AE259F8001A4C6D /* ViewController.xib in Resources */,
 				21633D971AE259B8001A4C6D /* Images.xcassets in Resources */,
