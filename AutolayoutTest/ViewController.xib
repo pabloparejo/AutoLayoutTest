@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6254"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
@@ -11,9 +12,35 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pkm-ZP-i3w" userLabel="Red">
+                    <rect key="frame" x="14" y="85" width="58" height="70"/>
+                    <color key="backgroundColor" red="1" green="0.70196078429999997" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="WH5-Cm-4cp"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82H-Y2-yP7" userLabel="Blue">
+                    <rect key="frame" x="14" y="225" width="116" height="70"/>
+                    <color key="backgroundColor" red="0.70588235290000001" green="0.94762541118421051" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="HCw-fH-bft"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Pkm-ZP-i3w" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="85" id="9Fc-lc-fRu"/>
+                <constraint firstItem="82H-Y2-yP7" firstAttribute="width" secondItem="Pkm-ZP-i3w" secondAttribute="width" multiplier="2" id="KqO-N6-MWO"/>
+                <constraint firstItem="82H-Y2-yP7" firstAttribute="leading" secondItem="Pkm-ZP-i3w" secondAttribute="leading" id="cVh-rS-aOh"/>
+                <constraint firstAttribute="trailing" secondItem="Pkm-ZP-i3w" secondAttribute="trailing" constant="248" id="qm5-3s-h4Z"/>
+                <constraint firstItem="Pkm-ZP-i3w" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="sBK-CV-aqC"/>
+                <constraint firstItem="82H-Y2-yP7" firstAttribute="top" secondItem="Pkm-ZP-i3w" secondAttribute="bottom" constant="70" id="xhs-2s-o2i"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="844" y="536"/>
         </view>
     </objects>
 </document>
