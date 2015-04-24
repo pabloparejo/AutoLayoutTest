@@ -11,7 +11,6 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *leftMarginConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *rightMarginConstraint;
-
 @end
 
 @implementation ViewController
@@ -24,14 +23,16 @@
 -(void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
-    [UIView animateWithDuration:.5 animations:^{
+    
+    int margin = self.leftMarginConstraint.constant;
+    [UIView animateWithDuration:.6 animations:^{
         self.leftMarginConstraint.constant = 10;
         self.rightMarginConstraint.constant = 10;
         [self.view layoutIfNeeded];
     } completion:^(BOOL finished) {
-        [UIView animateWithDuration:.5 animations:^{
-            self.leftMarginConstraint.constant = 56;
-            self.rightMarginConstraint.constant = 56;
+        [UIView animateWithDuration:.3 animations:^{
+            self.leftMarginConstraint.constant = margin;
+            self.rightMarginConstraint.constant = margin;
             [self.view layoutIfNeeded];
         }];
     }];
